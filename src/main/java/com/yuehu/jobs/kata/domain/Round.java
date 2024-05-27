@@ -16,5 +16,10 @@
 
 package com.yuehu.jobs.kata.domain;
 
+/**
+ * Round representation.
+ *
+ * @param ballWinnerId ball winner id in current round
+ */
 public record Round(String ballWinnerId) {
 }

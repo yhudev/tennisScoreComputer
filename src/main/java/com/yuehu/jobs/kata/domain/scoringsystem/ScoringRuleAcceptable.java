@@ -18,6 +18,17 @@ package com.yuehu.jobs.kata.domain.scoringsystem;
 
 import com.yuehu.jobs.kata.domain.Round;
 
+/**
+ * Interface to allow a {@link ScoringRuleVisitor} visits and changes internal state of object.
+ *
+ * @author Yue HU
+ */
 public interface ScoringRuleAcceptable {
+    /**
+     * Accepts a {@link ScoringRuleVisitor} and process a round.
+     *
+     * @param round              round in a game
+     * @param scoringRuleVisitor scoring rules to be applied
+     */
     void accept(final Round round, final ScoringRuleVisitor scoringRuleVisitor);
 }

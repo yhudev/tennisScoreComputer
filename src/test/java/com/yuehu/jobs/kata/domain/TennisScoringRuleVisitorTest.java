@@ -33,6 +33,9 @@ import static com.yuehu.jobs.kata.constant.PlayerConstants.A;
 import static com.yuehu.jobs.kata.constant.PlayerConstants.B;
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * Test different tennis scoring rules.
+ */
 class TennisScoringRuleVisitorTest {
 
     private TennisScoringRuleVisitor objectUnderTest;

@@ -21,7 +21,13 @@ import com.yuehu.jobs.kata.domain.Player;
 import com.yuehu.jobs.kata.enums.Score;
 import lombok.EqualsAndHashCode;
 
-
+/**
+ * In progress status.
+ * - Game is in progress.
+ * - It can change to DeuceStatus, EndStatus.
+ *
+ * @author Yue HU
+ */
 @EqualsAndHashCode(callSuper = true)
 public final class InProgressStatus extends Status {
 

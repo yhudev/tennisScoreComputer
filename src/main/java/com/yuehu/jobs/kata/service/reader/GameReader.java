@@ -20,6 +20,17 @@ import com.yuehu.jobs.kata.domain.Round;
 
 import java.util.List;
 
+/**
+ * Interface to provide a reader to read game information.
+ *
+ * @author Yue HU
+ */
 public interface GameReader {
+    /**
+     * Read a game input and translate to rounds information.
+     *
+     * @param input game input
+     * @return rounds information
+     */
     List<Round> read(String input);
 }

@@ -20,7 +20,11 @@ import com.yuehu.jobs.kata.domain.Game;
 import com.yuehu.jobs.kata.domain.Player;
 import lombok.EqualsAndHashCode;
 
-
+/**
+ * Deuce status.
+ * - Game is in deuce.
+ * - It can change to EndStatus.
+ */
 @EqualsAndHashCode(callSuper = true)
 public final class DeuceStatus extends Status {
 

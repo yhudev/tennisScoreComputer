@@ -24,6 +24,11 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
+/**
+ * Tennis score service which provide a score service with tennis scoring rules.
+ *
+ * @author Yue HU
+ */
 @RequiredArgsConstructor
 public class TennisScoreService implements ScoreService {
 

@@ -20,6 +20,11 @@ import com.yuehu.jobs.kata.domain.Round;
 
 import java.util.List;
 
+/**
+ * Game reader which takes a simple String input containing the character corresponding to "player X won the ball".
+ *
+ * @author Yue HU
+ */
 public class GameStringReader implements GameReader {
     @Override
     public List<Round> read(String input) {

@@ -22,6 +22,14 @@ import com.yuehu.jobs.kata.domain.scoringsystem.ScoringRuleAcceptable;
 import com.yuehu.jobs.kata.domain.scoringsystem.ScoringRuleVisitor;
 import lombok.Getter;
 
+/**
+ * Game representation:
+ * - Composed of two players
+ * - Accepts scoring rules
+ * - Using Visitor behavioral design pattern
+ *
+ * @author Yue HU
+ */
 @Getter
 public class Game implements ScoringRuleAcceptable {
 
@@ -31,6 +39,12 @@ public class Game implements ScoringRuleAcceptable {
 
     private Status status;
 
+    /**
+     * Constructor for game with two players. Initial status is START.
+     *
+     * @param playerA player A
+     * @param playerB player B
+     */
     public Game(Player playerA, Player playerB) {
         this.playerA = playerA;
         this.playerB = playerB;
@@ -42,6 +56,11 @@ public class Game implements ScoringRuleAcceptable {
         scoringRuleVisitor.visit(this, round);
     }
 
+    /**
+     * Change game status.
+     *
+     * @param status new status
+     */
     public void changeStatus(final Status status) {
         this.status = status;
     }

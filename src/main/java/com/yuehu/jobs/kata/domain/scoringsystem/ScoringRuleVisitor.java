@@ -19,6 +19,15 @@ package com.yuehu.jobs.kata.domain.scoringsystem;
 import com.yuehu.jobs.kata.domain.Game;
 import com.yuehu.jobs.kata.domain.Round;
 
+/**
+ * Visitor with scoring rules.
+ */
 public interface ScoringRuleVisitor {
+    /**
+     * Visit game and process round.
+     *
+     * @param game  game to be processed
+     * @param round round to be processed
+     */
     void visit(final Game game, final Round round);
 }

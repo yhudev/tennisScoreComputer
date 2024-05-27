@@ -18,6 +18,11 @@ package com.yuehu.jobs.kata.enums;
 
 import lombok.RequiredArgsConstructor;
 
+/**
+ * Tennis score
+ *
+ * @author Yue HU
+ */
 @RequiredArgsConstructor
 public enum Score {
     ZERO(0),
@@ -27,6 +32,14 @@ public enum Score {
 
     private final int points;
 
+    /**
+     * Increase score using following rules:
+     * - 0 -> 15
+     * - 15 -> 30
+     * - 30 -> 40
+     *
+     * @return increased score
+     */
     public Score increase() {
         switch (this) {
             case ZERO -> {

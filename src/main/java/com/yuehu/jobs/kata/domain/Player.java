@@ -19,6 +19,11 @@ package com.yuehu.jobs.kata.domain;
 import com.yuehu.jobs.kata.enums.Score;
 import lombok.Getter;
 
+/**
+ * Player representation.
+ *
+ * @author Yue HU
+ */
 @Getter
 public class Player {
 
@@ -28,26 +33,47 @@ public class Player {
 
     private Score score;
 
+    /**
+     * Constructor for player.
+     *
+     * @param id player name
+     */
     public Player(String id) {
         this.id = id;
         this.score = Score.ZERO;
         this.advantaged = false;
     }
 
+    /**
+     * Constructor for player.
+     *
+     * @param id         player name
+     * @param advantaged if player has advantage
+     * @param score      player score
+     */
     protected Player(String id, boolean advantaged, Score score) {
         this.id = id;
         this.advantaged = advantaged;
         this.score = score;
     }
 
+    /**
+     * Increase player score.
+     */
     public void increaseScore() {
         this.score = score.increase();
     }
 
+    /**
+     * Player wins advantage.
+     */
     public void winAdvantaged() {
         this.advantaged = true;
     }
 
+    /**
+     * Player loses advantage.
+     */
     public void loseAdvantaged() {
         this.advantaged = false;
     }

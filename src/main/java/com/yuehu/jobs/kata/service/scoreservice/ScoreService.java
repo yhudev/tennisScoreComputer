@@ -20,6 +20,16 @@ import com.yuehu.jobs.kata.domain.Round;
 
 import java.util.List;
 
+/**
+ * Interface to provide scoring system.
+ *
+ * @author Yue HU
+ */
 public interface ScoreService {
+    /**
+     * Process game rounds using scoring rules.
+     *
+     * @param rounds rounds list.
+     */
     void process(List<Round> rounds);
 }

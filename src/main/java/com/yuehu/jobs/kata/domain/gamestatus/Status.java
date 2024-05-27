@@ -22,14 +22,34 @@ import com.yuehu.jobs.kata.exception.PlayerNotExistException;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * Abstract game status which use State behavioral design pattern.
+ * A game has the following status:
+ * - StartStatus
+ * - InProgressStatus
+ * - DeuceStatus
+ * - EndStatus
+ *
+ * @author Yue HU
+ */
 @RequiredArgsConstructor
 @EqualsAndHashCode
 public abstract class Status {
 
     protected final Game game;
 
+    /**
+     * Change status when a ball is won.
+     *
+     * @param winnerId player who wins the ball
+     */
     public abstract void winBall(String winnerId);
 
+    /**
+     * Status message
+     *
+     * @return status readable message
+     */
     public String statusMessage() {
         return "Player " + game.getPlayerA().getId() + " : " + game.getPlayerA().getScore() + " / Player " + game.getPlayerB().getId() + " : " + game.getPlayerB().getScore();
     }

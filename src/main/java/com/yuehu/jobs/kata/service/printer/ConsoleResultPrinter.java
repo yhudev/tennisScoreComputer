@@ -19,6 +19,11 @@ package com.yuehu.jobs.kata.service.printer;
 import com.yuehu.jobs.kata.domain.Game;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Result printer for printing game output in console.
+ *
+ * @author Yue HU
+ */
 @Slf4j
 public class ConsoleResultPrinter implements ResultPrinter {
     @Override

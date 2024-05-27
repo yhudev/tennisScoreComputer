@@ -19,7 +19,13 @@ package com.yuehu.jobs.kata.domain.gamestatus;
 import com.yuehu.jobs.kata.domain.Game;
 import lombok.EqualsAndHashCode;
 
-
+/**
+ * End status.
+ * - A game is terminated.
+ * - Contains winner information.
+ *
+ * @author Yue HU
+ */
 @EqualsAndHashCode(callSuper = true)
 public final class EndStatus extends Status {
 

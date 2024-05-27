@@ -19,6 +19,13 @@ package com.yuehu.jobs.kata.domain.gamestatus;
 import com.yuehu.jobs.kata.domain.Game;
 import lombok.EqualsAndHashCode;
 
+/**
+ * Start status.
+ * - Game is started.
+ * - It can change to InProgressStatus.
+ *
+ * @author Yue HU
+ */
 @EqualsAndHashCode(callSuper = true)
 public final class StartStatus extends Status {
 

@@ -28,11 +28,11 @@ import org.springframework.stereotype.Component;
  * Entry point of computer.
  * <p>
  * The computer is designed using Hexagonal architecture:
- * - The interface GameReader is created for user-side, in order to isolate the interactions with users.
- * - The business logic is encapsulated in ScoreService.
- * - The interface ResultPrinter is created for server-side, in order to isolate output and inverse dependency to ScoreService.
+ * - The interface {@link GameReader} is created for user-side, in order to isolate the interactions with users.
+ * - The business logic is encapsulated in {@link ScoreService}.
+ * - The interface {@link com.yuehu.jobs.kata.service.printer.ResultPrinter} is created for server-side, in order to isolate output and inverse dependency to {@link ScoreService}.
  *
- * @author huyue
+ * @author Yue HU
  */
 @Component
 @RequiredArgsConstructor

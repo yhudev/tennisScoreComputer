@@ -35,7 +35,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * The computer takes 1 parameter which is a String containing the character 'A' or 'B'.
  * The character 'A' corresponding to "player A won the ball", and 'B' corresponding to "player B won the ball".
  *
- * @author huyue
+ * @author Yue HU
  */
 @SpringBootApplication
 public class TennisScoreComputer {

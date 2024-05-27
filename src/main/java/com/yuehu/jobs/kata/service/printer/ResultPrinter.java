@@ -18,6 +18,16 @@ package com.yuehu.jobs.kata.service.printer;
 
 import com.yuehu.jobs.kata.domain.Game;
 
+/**
+ * Interface to provide game result output printer.
+ *
+ * @author Yue HU
+ */
 public interface ResultPrinter {
+    /**
+     * Print game status.
+     *
+     * @param game game to be printed
+     */
     void printStatus(Game game);
 }

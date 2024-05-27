@@ -20,6 +20,11 @@ import com.yuehu.jobs.kata.domain.Game;
 import com.yuehu.jobs.kata.domain.Round;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * Visitor which will apply tennis scoring rules.
+ *
+ * @author Yue HU
+ */
 @RequiredArgsConstructor
 public class TennisScoringRuleVisitor implements ScoringRuleVisitor {
 
